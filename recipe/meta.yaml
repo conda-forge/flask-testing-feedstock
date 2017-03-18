@@ -1,8 +1,8 @@
 {%set name = "Flask-Testing" %}
-{%set version = "0.6.1" %}
+{%set version = "0.6.2" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "abf539332c013aee5301cbb720d2c6a78bb69fe9bcf854697b6f62f1e7f175b2" %}
+{%set hash_val = "f25effd266fce9b16482f4ce3423d5a7d25534aab77bc83caace5d9637bf0df0" %}
 {%set build_num = "0" %}
 
 package:
