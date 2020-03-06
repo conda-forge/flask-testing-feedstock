@@ -1,8 +1,7 @@
 {% set name = "Flask-Testing" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "dc076623d7d850653a018cb64f500948334c8aeb6b10a5a842bf1bcfb98122bc" %}
+{% set hash_val = "d849bf53eb1ceb09dff6611888588cb60f20238058fb1ebcd917d69febc373e6" %}
 {% set build = 0 %}
 
 package:
@@ -12,7 +11,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ hash_val }}
 
 build:
   number: {{ build }}
@@ -37,7 +36,7 @@ about:
   license: BSD 3-Clause
   license_file: LICENSE
   license_family: BSD
-  summary: 'Unit testing for Flask'
+  summary: Unit testing for Flask
   doc_url: https://pythonhosted.org/Flask-Testing/
   dev_url: https://github.com/jarus/flask-testing
 
