@@ -1,6 +1,5 @@
 {% set name = "Flask-Testing" %}
 {% set version = "0.8.0" %}
-{% set hash_val = "d849bf53eb1ceb09dff6611888588cb60f20238058fb1ebcd917d69febc373e6" %}
 
 package:
   name: {{ name|lower }}
