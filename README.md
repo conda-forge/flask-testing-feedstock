@@ -3,13 +3,15 @@ About flask-testing
 
 Home: https://github.com/jarus/flask-testing
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/flask-testing-feedstock/blob/master/LICENSE.txt)
 
 Summary: Unit testing for Flask
 
+Development: https://github.com/jarus/flask-testing
 
+Documentation: https://pythonhosted.org/Flask-Testing/
 
 Current build status
 ====================
