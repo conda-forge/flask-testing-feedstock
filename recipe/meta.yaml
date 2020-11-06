@@ -1,28 +1,24 @@
 {% set name = "Flask-Testing" %}
 {% set version = "0.8.0" %}
-{% set bundle = "tar.gz" %}
 {% set hash_val = "d849bf53eb1ceb09dff6611888588cb60f20238058fb1ebcd917d69febc373e6" %}
-{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  sha256: {{ hash_val }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: d849bf53eb1ceb09dff6611888588cb60f20238058fb1ebcd917d69febc373e6
 
 build:
-  number: {{ build }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
-
+    - pip
   run:
     - python
     - flask
@@ -30,10 +26,14 @@ requirements:
 test:
   imports:
     - flask_testing
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/jarus/flask-testing
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   license_family: BSD
   summary: Unit testing for Flask
