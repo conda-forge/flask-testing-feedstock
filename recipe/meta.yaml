@@ -1,5 +1,5 @@
 {% set name = "Flask-Testing" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d849bf53eb1ceb09dff6611888588cb60f20238058fb1ebcd917d69febc373e6
+  sha256: 0a734d7b68e63a9410b413cd7b1f96456f9a858bd09a6222d465650cc782eb01
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
